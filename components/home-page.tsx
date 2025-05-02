@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react"
 import { useMobile } from "@/hooks/use-mobile"
 import { ContactForm } from "@/components/contact-form"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { projectImages, defaultPlaceholder } from "@/lib/image-references"
 
 // Floating particle component
 const FloatingParticle = ({ size, color, delay, duration, xRange, yRange, isMobile }) => {
@@ -439,7 +440,7 @@ export default function HomePage({ dictionary, lang }: { dictionary: any; lang: 
             </motion.div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:gap-12">
               <AnimatedProjectCard
-                image="/images/smart-home.png"
+                image={projectImages.smartHomeImage}
                 title={dictionary.projects.smartHome.title}
                 description={dictionary.projects.smartHome.description}
                 tags={["IoT", "Mobile App"]}
@@ -447,7 +448,7 @@ export default function HomePage({ dictionary, lang }: { dictionary: any; lang: 
                 isMobile={isMobile}
               />
               <AnimatedProjectCard
-                image="/images/erp-system.png"
+                image={projectImages.erpImage}
                 title={dictionary.projects.erp.title}
                 description={dictionary.projects.erp.description}
                 tags={["ERP", "Web App"]}
@@ -455,7 +456,7 @@ export default function HomePage({ dictionary, lang }: { dictionary: any; lang: 
                 isMobile={isMobile}
               />
               <AnimatedProjectCard
-                image="/images/adventure-game.png"
+                image={projectImages.adventureGameImage}
                 title={dictionary.projects.adventure.title}
                 description={dictionary.projects.adventure.description}
                 tags={["Game", "Mobile"]}
@@ -463,7 +464,7 @@ export default function HomePage({ dictionary, lang }: { dictionary: any; lang: 
                 isMobile={isMobile}
               />
               <AnimatedProjectCard
-                image="/images/healthcare-system.png"
+                image={projectImages.healthcareImage}
                 title={dictionary.projects.healthcare.title}
                 description={dictionary.projects.healthcare.description}
                 tags={["Custom Software", "Web App"]}
@@ -705,7 +706,7 @@ function AnimatedProjectCard({ image, title, description, tags, delay = 0, isMob
           className="w-full h-full"
         >
           <Image
-            src={image || "/placeholder.svg"}
+            src={image || defaultPlaceholder}
             alt={title}
             fill
             className="object-cover"
