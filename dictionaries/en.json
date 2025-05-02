@@ -1,0 +1,78 @@
+{
+  "header": {
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "contactUs": "Contact Us"
+  },
+  "hero": {
+    "title": "Empowering Innovation Through Software",
+    "subtitle": "Mozena builds smart, scalable software solutions for modern businesses."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We provide comprehensive software solutions tailored to your business needs.",
+    "iot": {
+      "title": "IoT Solutions",
+      "description": "Connect your devices and gather valuable data with our custom IoT solutions."
+    },
+    "erp": {
+      "title": "ERP & CRM Development",
+      "description": "Streamline your business operations with tailored ERP and CRM systems."
+    },
+    "game": {
+      "title": "Game Development",
+      "description": "Create engaging and immersive gaming experiences for various platforms."
+    },
+    "mobile": {
+      "title": "Mobile App Development",
+      "description": "Build powerful, user-friendly mobile applications for iOS and Android."
+    },
+    "custom": {
+      "title": "Custom Software Solutions",
+      "description": "Develop bespoke software solutions designed specifically for your unique requirements."
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Explore some of our recent work and successful implementations.",
+    "smartHome": {
+      "title": "Smart Home Automation",
+      "description": "A comprehensive IoT solution for residential smart home automation and energy management."
+    },
+    "erp": {
+      "title": "Enterprise Resource Planning",
+      "description": "Custom ERP system for a manufacturing company to streamline operations and improve efficiency."
+    },
+    "adventure": {
+      "title": "Adventure Quest",
+      "description": "An immersive mobile game with rich graphics and engaging storyline for iOS and Android."
+    },
+    "healthcare": {
+      "title": "Healthcare Management System",
+      "description": "Comprehensive software solution for healthcare providers to manage patient data and operations."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team to discuss your project requirements.",
+    "companyName": "Mozena Software",
+    "companyDescription": "We're here to help you transform your business with innovative software solutions.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email",
+      "messagePlaceholder": "Enter your message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message",
+      "fillFields": "Please fill in all fields"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

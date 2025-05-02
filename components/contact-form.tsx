@@ -9,7 +9,13 @@ import { Textarea } from "@/components/ui/textarea"
 import { motion } from "framer-motion"
 import { Loader2 } from "lucide-react"
 
-export function ContactForm() {
+interface ContactFormProps {
+  dictionary: any
+}
+
+export function ContactForm({ dictionary }: ContactFormProps) {
+  const { form } = dictionary.contact
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,14 +41,14 @@ export function ContactForm() {
     if (!formData.name || !formData.email || !formData.message) {
       setStatus({
         type: "error",
-        message: "Please fill in all fields",
+        message: form.fillFields,
       })
       return
     }
 
     setStatus({
       type: "loading",
-      message: "Sending message...",
+      message: form.sending,
     })
 
     try {
@@ -57,17 +63,17 @@ export function ContactForm() {
       if (response.ok) {
         setStatus({
           type: "success",
-          message: "Message sent successfully!",
+          message: form.success,
         })
         setFormData({ name: "", email: "", message: "" })
       } else {
         const error = await response.json()
-        throw new Error(error.message || "Failed to send message")
+        throw new Error(error.message || form.error)
       }
     } catch (error) {
       setStatus({
         type: "error",
-        message: error instanceof Error ? error.message : "Failed to send message",
+        message: error instanceof Error ? error.message : form.error,
       })
     }
   }
@@ -79,31 +85,37 @@ export function ContactForm() {
           htmlFor="name"
           className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
-          Name
+          {form.name}
         </label>
-        <Input id="name" value={formData.name} onChange={handleChange} placeholder="Enter your name" />
+        <Input id="name" value={formData.name} onChange={handleChange} placeholder={form.namePlaceholder} />
       </div>
       <div className="space-y-2">
         <label
           htmlFor="email"
           className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
-          Email
+          {form.email}
         </label>
-        <Input id="email" type="email" value={formData.email} onChange={handleChange} placeholder="Enter your email" />
+        <Input
+          id="email"
+          type="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder={form.emailPlaceholder}
+        />
       </div>
       <div className="space-y-2">
         <label
           htmlFor="message"
           className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         >
-          Message
+          {form.message}
         </label>
         <Textarea
           id="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Enter your message"
+          placeholder={form.messagePlaceholder}
           className="min-h-[120px]"
         />
       </div>
@@ -112,10 +124,10 @@ export function ContactForm() {
           {status.type === "loading" ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Sending...
+              {form.sending}
             </>
           ) : (
-            "Send Message"
+            form.send
           )}
         </Button>
       </motion.div>

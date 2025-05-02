@@ -1,0 +1,78 @@
+{
+  "header": {
+    "services": "Hizmetler",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "contactUs": "Bize Ulaşın"
+  },
+  "hero": {
+    "title": "Yazılım ile İnovasyonu Güçlendiriyoruz",
+    "subtitle": "Mozena, modern işletmeler için akıllı, ölçeklenebilir yazılım çözümleri geliştirir."
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "İşletme ihtiyaçlarınıza göre özelleştirilmiş kapsamlı yazılım çözümleri sunuyoruz.",
+    "iot": {
+      "title": "IoT Çözümleri",
+      "description": "Özel IoT çözümlerimizle cihazlarınızı bağlayın ve değerli veriler toplayın."
+    },
+    "erp": {
+      "title": "ERP ve CRM Geliştirme",
+      "description": "Özelleştirilmiş ERP ve CRM sistemleri ile iş operasyonlarınızı düzenleyin."
+    },
+    "game": {
+      "title": "Oyun Geliştirme",
+      "description": "Çeşitli platformlar için ilgi çekici ve sürükleyici oyun deneyimleri yaratın."
+    },
+    "mobile": {
+      "title": "Mobil Uygulama Geliştirme",
+      "description": "iOS ve Android için güçlü, kullanıcı dostu mobil uygulamalar oluşturun."
+    },
+    "custom": {
+      "title": "Özel Yazılım Çözümleri",
+      "description": "Benzersiz gereksinimleriniz için özel olarak tasarlanmış yazılım çözümleri geliştirin."
+    }
+  },
+  "projects": {
+    "title": "Projelerimiz",
+    "subtitle": "Son çalışmalarımızdan ve başarılı uygulamalarımızdan bazılarını keşfedin.",
+    "smartHome": {
+      "title": "Akıllı Ev Otomasyonu",
+      "description": "Konut akıllı ev otomasyonu ve enerji yönetimi için kapsamlı bir IoT çözümü."
+    },
+    "erp": {
+      "title": "Kurumsal Kaynak Planlaması",
+      "description": "Bir üretim şirketi için operasyonları düzenlemek ve verimliliği artırmak için özel ERP sistemi."
+    },
+    "adventure": {
+      "title": "Macera Oyunu",
+      "description": "iOS ve Android için zengin grafikler ve sürükleyici hikaye içeren etkileyici bir mobil oyun."
+    },
+    "healthcare": {
+      "title": "Sağlık Yönetim Sistemi",
+      "description": "Sağlık hizmeti sağlayıcılarının hasta verilerini ve operasyonlarını yönetmesi için kapsamlı yazılım çözümü."
+    }
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Proje gereksinimlerinizi görüşmek için ekibimizle iletişime geçin.",
+    "companyName": "Mozena Yazılım",
+    "companyDescription": "İnovatif yazılım çözümleriyle işletmenizi dönüştürmenize yardımcı olmak için buradayız.",
+    "form": {
+      "name": "İsim",
+      "email": "E-posta",
+      "message": "Mesaj",
+      "namePlaceholder": "İsminizi girin",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "messagePlaceholder": "Mesajınızı girin",
+      "send": "Mesaj Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "Mesajınız başarıyla gönderildi!",
+      "error": "Mesaj gönderilirken bir hata oluştu",
+      "fillFields": "Lütfen tüm alanları doldurun"
+    }
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}
